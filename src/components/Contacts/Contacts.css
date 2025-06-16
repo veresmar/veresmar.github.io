@@ -1,0 +1,19 @@
+#contacts {
+  margin-top: 6.5vw;
+  font-family: sans-serif;
+  padding: 0.6vw 4vw;
+  max-width: 47vh;
+  max-width: 30%;
+
+  & ul {
+    display: flex;
+  }
+  li {
+    cursor: pointer;
+  }
+
+  & img {
+    width: 5vh;
+    width: 4em;
+  }
+}
