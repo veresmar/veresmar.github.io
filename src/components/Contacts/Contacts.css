@@ -4,12 +4,17 @@
   padding: 0.6vw 4vw;
   max-width: 47vh;
   max-width: 30%;
-
   & ul {
     display: flex;
   }
   li {
+    transition: transform 0.3s ease, filter 0.3s ease;
     cursor: pointer;
+    &:hover {
+      transform: scale(1.08);
+      filter: drop-shadow(2px 4px 6px black);
+      transition: transform 0s ease, filter 0s ease;
+    }
   }
 
   & img {

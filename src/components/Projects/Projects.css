@@ -147,12 +147,17 @@
   width: 60%;
   margin-bottom: 2em;
 
+  color: rgb(155, 155, 155);
   @media (max-width: 768px) {
     width: 90%;
     padding: 0 5em;
   }
   & a {
+    color: rgb(155, 155, 155);
     border-bottom: 1px solid blue;
+    &:hover {
+      color: var(--font-RGB);
+    }
   }
   & h2 {
     margin-top: 0;
@@ -160,4 +165,9 @@
   & p {
     font-size: 1.4em;
   }
+}
+
+.place {
+  text-align: right;
+  color: rgb(74, 74, 74);
 }
