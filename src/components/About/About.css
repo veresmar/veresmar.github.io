@@ -26,6 +26,11 @@ h2 {
       calc(50% - 26vh) 0/52vh 100%,
     radial-gradient(18.38vh at 50% -13vh, #0000 99%, #000 101%) 50% 13vh/52vh
       100% repeat-x;
+
+  @media (max-width: 768px) {
+    margin-top: -12vw;
+    display: none;
+  }
 }
 .wrap-about {
   display: flex;

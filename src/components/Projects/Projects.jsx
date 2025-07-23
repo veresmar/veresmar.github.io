@@ -63,7 +63,7 @@ export const Projects = () => (
 
       <h2>Dodo Shift</h2>
        <p className="technology">PUG, Scss</p>
-        <p>The website with guides for creative teams</p>
+        <p>The website with guides for creative teams.</p>
  
       <p className="i-did">What I did: </p>
         <ul>
@@ -82,7 +82,7 @@ export const Projects = () => (
 
       <h2>Dodo TV-menu</h2>
       <p className="technology">JS</p>
-        <p>A tool for marketers, helping to update layouts on the pizzeria screens</p>
+        <p>A tool for marketers, helping to update layouts on the pizzeria screens.</p>
         <p className="i-did">What I did: </p>
         <ul>
           <li>- implemented filtering of layouts by data-attributes,</li>
@@ -95,17 +95,17 @@ export const Projects = () => (
     </div>
 
     <div className="project">
-      <img src={intuition} alt="The website for animation design bureau. The screensot of the main page" />
+      <img src={intuition} alt="The website for the design bureau. The screensot of the main page" />
       <div className="text-wrap">
 
       <h2>Intuition</h2>
       <p className="technology">Svelte, Scss, PUG</p>
-        <p>The website for animation design bureau</p>
+        <p>The website for the design bureau.</p>
         <p className="i-did">What I did: </p>
      
         <ul>
-          remade the book chapters:
-          <li>turned the Pug layout (from the old website) into Svelte components on <a href="https://intuition.team/ru/complex-designer-summary">the new one</a></li>
+          <li>remade the book chapters:</li>
+          <li>- turned the Pug layout (from the old website) into Svelte components on <a href="https://intuition.team/ru/complex-designer-summary">the new one</a></li>
         </ul>
       </div>
         <a href="https://intuition.team/about" target='_blanc'></a>

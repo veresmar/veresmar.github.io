@@ -14,7 +14,7 @@
       calc(100% - 13vh) / 52vh 100% repeat-x;
 
   @media (max-width: 768px) {
-    margin-top: 26vh;
+    margin-top: 11vh;
     padding: 0;
   }
 }
@@ -34,6 +34,7 @@
     font-family: "HighSummer";
 
     @media (max-width: 768px) {
+      font-size: 3.5em;
       white-space: pre-wrap;
       line-height: 0.8em;
       margin-top: 0.7em;
@@ -59,15 +60,18 @@
     transition: transform 0.35s ease;
 
     @media (max-width: 768px) {
-      max-width: 80%;
+      width: 90%;
       flex-direction: column;
       align-items: center;
-      padding: 2.5em 0.5em;
+      padding: 1em 0.5em;
     }
 
     & img {
       max-width: 20em;
       border-radius: 0.7em;
+      @media (max-width: 768px) {
+        max-width: 95%;
+      }
     }
 
     & .text-wrap {
@@ -75,17 +79,26 @@
       width: 55%;
 
       @media (max-width: 768px) {
-        width: 100%;
+        width: 96%;
       }
 
       & h2 {
         font-size: 5em;
         word-spacing: 0vw;
         font-family: "HighSummer";
+
+        @media (max-width: 768px) {
+          font-size: 3.9em;
+          margin: 0.3em 0;
+        }
       }
       & p {
         font-size: 1.5em;
         font-family: sans-serif;
+
+        @media (max-width: 768px) {
+          font-size: 1.2em;
+        }
       }
       & ul {
         font-size: 1.2em;
@@ -93,6 +106,9 @@
       & .i-did {
         font-family: "HighSummer";
         font-size: 2.5em;
+        @media (max-width: 768px) {
+          margin-top: 0.25em;
+        }
       }
 
       & .technology {
@@ -105,6 +121,14 @@
         min-width: 2.5em;
         text-align: center;
         transform: rotate(10deg);
+
+        @media (max-width: 768px) {
+          font-size: 1.3em;
+
+          right: 0;
+          top: -0.8em;
+          transform: rotate(3deg);
+        }
       }
     }
     & a {
@@ -146,12 +170,13 @@
 .about-section {
   width: 60%;
   margin-bottom: 2em;
-
   color: rgb(155, 155, 155);
+
   @media (max-width: 768px) {
     width: 90%;
-    padding: 0 5em;
+    padding: 2em 5em 0;
   }
+
   & a {
     color: rgb(155, 155, 155);
     border-bottom: 1px solid blue;
