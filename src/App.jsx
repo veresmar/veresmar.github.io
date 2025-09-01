@@ -15,9 +15,11 @@ function Home() {
   return (
     <>
       <header>
-        <AboutMe />
+        <h1>Maria Veres, frontend developer.</h1>
+        <p>Amsterdam, Netherlands</p>
       </header>
       <main>
+        <AboutMe />
         <Projects />
       </main>
       <footer>

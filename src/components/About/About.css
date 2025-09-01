@@ -1,37 +1,14 @@
 #about {
+  display: flex;
+  justify-content: space-between;
   position: relative;
-  font-family: "HighSummer";
-}
-
-.veresPic {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-}
-
-h2 {
-  margin-left: 0.5vw;
-  word-spacing: 14vw;
-}
-.font {
-  filter: invert();
-}
-.wave-up {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  margin-top: 7vw;
-
-  background: radial-gradient(18.38vh at 50% 26vh, #000 99%, #0000 101%)
-      calc(50% - 26vh) 0/52vh 100%,
-    radial-gradient(18.38vh at 50% -13vh, #0000 99%, #000 101%) 50% 13vh/52vh
-      100% repeat-x;
+  padding: 1%;
 
   @media (max-width: 768px) {
-    margin-top: -12vw;
-    display: none;
+    flex-direction: column;
   }
 }
+
 .wrap-about {
   display: flex;
   flex-direction: column;
@@ -43,10 +20,10 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 5em;
-    height: 2.5em;
+    /* width: 5em;
+    height: 2.5em; */
     font-size: 2em;
-    font-family: "HighSummer";
+    font-family: sans-serif;
     background-color: var(--background-RGB);
     border-radius: 50%;
     bottom: 3em;
@@ -54,5 +31,45 @@ h2 {
     z-index: 1;
     /* bottom: -4.5em;
     left: 7.5em; */
+  }
+}
+.about-section {
+  margin-bottom: 1em;
+  color: rgb(175 175 175);
+
+  & a {
+    color: rgba(215, 215, 215, 1);
+    border-bottom: 1px solid white;
+    &:hover {
+      color: var(--font-RGB);
+    }
+  }
+  & h2 {
+    margin-top: 0;
+  }
+  & p {
+    font-size: 1.3em;
+  }
+
+  & .about-text {
+    width: 49%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  & .about-img {
+    width: 25em;
+    padding: 6.6%;
+
+    & img {
+      width: 100%;
+      filter: grayscale(1);
+    }
+
+    @media (max-width: 768px) {
+      width: 26em;
+      padding: 3%;
+    }
   }
 }

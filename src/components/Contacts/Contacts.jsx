@@ -19,9 +19,8 @@ export const Contacts = () => {
           </a>
         </li>
         <li>
-          <a href="https://t.me/VERESMARS" target='_blanc'>
-
-        <img src={Tg} alt="telegram icon" />
+          <a href="https://www.linkedin.com/in/mariia-veres-824507229/" target='_blanc'>
+        <img src={Tg} alt="linkedin icon" />
           </a>
         </li>
       </ul>

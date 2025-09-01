@@ -21,7 +21,29 @@
   --mobile-width: 900px;
   cursor: url("../assets/skyrim.cur") 5 5, auto;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 1%;
+  background-color: white;
+  color: black;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  p {
+    font-size: 1em;
+    font-weight: 650;
+    white-space: break-spaces;
+    line-height: 1.2em;
+    width: 10%;
+    @media (max-width: 768px) {
+      width: 20%;
+    }
+  }
+}
 body {
   /* margin: 0; */
   /* display: flex;
@@ -39,22 +61,25 @@ body {
 }
 
 h1 {
-  text-align: center;
-  font-size: 15.5vw;
+  /* text-align: center; */
+  font-size: 2.5em;
   white-space: nowrap;
   line-height: 0.8;
   cursor: url("../assets/skyrim.cur") 5 5, auto;
+  @media (max-width: 768px) {
+    white-space: break-spaces;
+  }
 }
 
 h2 {
-  font-size: 13vw;
+  font-size: 2em;
   white-space: nowrap;
-  text-align: center;
+  /* text-align: center; */
 }
 h3 {
-  font-size: 6vw;
+  font-size: 1.8em;
   white-space: nowrap;
-  text-align: center;
+  /* text-align: center; */
 }
 a {
   color: var(--font-RGB);

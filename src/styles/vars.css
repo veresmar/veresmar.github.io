@@ -6,7 +6,14 @@
   --font-RGB: rgb(222, 222, 222);
   --projects-background-RGB: rgb(0, 0, 0);
   --hover-RGB: rgb(255, 163, 243);
-  --mask: radial-gradient(5.83vh at 50% 8vh, #1f1616 99%, #0000 101%) calc(50% - 10vh) 0 / 20vh 51% repeat-x, radial-gradient(5.83vh at 50% -3vh, #0000 99%, #000 101%) 50% 5vh / 20vh calc(51% - 5vh) repeat-x, radial-gradient(5.83vh at 50% calc(100% - 8vh), #000 99%, #0000 101%) 50% 100% / 20vh 51% repeat-x, radial-gradient(5.83vh at 50% calc(100% + 3vh), #0000 99%, #000 101%) calc(50% - 10vh) calc(100% - 5vh) / 20vh calc(51% - 5vh) repeat-x;
+  --mask: radial-gradient(5.83vh at 50% 8vh, #1f1616 99%, #0000 101%)
+      calc(50% - 10vh) 0 / 20vh 51% repeat-x,
+    radial-gradient(5.83vh at 50% -3vh, #0000 99%, #000 101%) 50% 5vh / 20vh
+      calc(51% - 5vh) repeat-x,
+    radial-gradient(5.83vh at 50% calc(100% - 8vh), #000 99%, #0000 101%) 50%
+      100% / 20vh 51% repeat-x,
+    radial-gradient(5.83vh at 50% calc(100% + 3vh), #0000 99%, #000 101%)
+      calc(50% - 10vh) calc(100% - 5vh) / 20vh calc(51% - 5vh) repeat-x;
 }
 
 @font-face {
@@ -15,7 +22,7 @@
   font-weight: 100 900;
 }
 @font-face {
-  font-family: "HighSummer";
+  font-family: sans-serif;
   src: url("../assets/font/high-summer.woff") format("opentype");
   font-weight: 100 900;
 }
