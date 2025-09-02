@@ -11,9 +11,24 @@ export const Projects = () => (
   <div id="projects" className="projects">
     
     <h2>Projects</h2>
+
     <div className="project">
-      <img src={yep} alt="The website of advertising agency. The screensot of the main page" />
-      
+      <img src={petrick} alt="The website for animation studio. The screensot of the main page" />
+      <div className="text-wrap">
+        <p>The website for animation studio.</p>
+      <h3>Petrik</h3>
+        <p className="i-did">What I did: </p>
+        <ul>
+          <li>- made adaptive layouts for projects, according to Figma/ Photoshop/ Behance designs  
+          </li>
+        </ul>
+      <p className="technology">Svelte, Scss, PUG</p>
+      </div>
+        <a href="https://www.petrick.co/" target='_blanc'></a>
+    </div>
+    
+    <div className="project">
+      <img src={yep} alt="The website of advertising agency. The screensot of the main page" /> 
       <div className="text-wrap">
       <p>The website of advertising agency.</p>
       <h3>Yep</h3>
@@ -31,20 +46,7 @@ export const Projects = () => (
       <a href="https://yepagency.ru/" target='_blanc'></a>
     </div>
 
-     <div className="project">
-      <img src={petrick} alt="The website for animation studio. The screensot of the main page" />
-      <div className="text-wrap">
-        <p>The website for animation studio.</p>
-      <h3>Petrik</h3>
-        <p className="i-did">What I did: </p>
-        <ul>
-          <li>- made adaptive layouts for projects, according to Figma/ Photoshop/ Behance designs  
-          </li>
-        </ul>
-      <p className="technology">Svelte, Scss, PUG</p>
-      </div>
-        <a href="https://www.petrick.co/" target='_blanc'></a>
-    </div>
+     
 
     <div className="project">
       <img src={shift} alt="The website with guides for creative teams. The screensot of the main page" />

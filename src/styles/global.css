@@ -10,7 +10,6 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
   color: var(--font-RGB);
   background-color: var(--background-RGB);
 
@@ -29,6 +28,8 @@ header {
   color: black;
 
   @media (max-width: 768px) {
+    min-width: 100%;
+    overflow-x: hidden;
     flex-direction: column;
     align-items: flex-end;
   }
@@ -39,33 +40,31 @@ header {
     white-space: break-spaces;
     line-height: 1.2em;
     width: 10%;
+
     @media (max-width: 768px) {
       width: 20%;
+      padding-right: 1em;
     }
   }
 }
 body {
-  /* margin: 0; */
-  /* display: flex;
-  place-items: center; */
-  /* min-width: 320px;
-  min-height: 100vh; */
+  overflow-x: hidden;
   width: 100%;
-  /* min-width: 1000px; */
   display: flex;
-
   flex-direction: column;
-  /* align-items: center; */
-
   cursor: url("../assets/skyrim.cur") 5 5, auto;
+  @media (max-width: 768px) {
+    width: 102%;
+  }
+}
+main {
 }
 
 h1 {
-  /* text-align: center; */
   font-size: 2.5em;
   white-space: nowrap;
   line-height: 0.8;
-  cursor: url("../assets/skyrim.cur") 5 5, auto;
+  /* cursor: url("../assets/skyrim.cur") 5 5, auto; */
   @media (max-width: 768px) {
     white-space: break-spaces;
   }

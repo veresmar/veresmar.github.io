@@ -1,8 +1,7 @@
 .projects-wrap {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: sans-serif;
-
   padding-bottom: 35vh;
   background: radial-gradient(
         13.26vh at 50% calc(100% - 15.6vh),
@@ -14,7 +13,8 @@
       calc(100% - 13vh) / 52vh 100% repeat-x;
 
   @media (max-width: 768px) {
-    margin-top: 11vh;
+    /* width: 100%; */
+    margin-top: 1vh;
     padding: 0;
   }
 }
@@ -31,50 +31,52 @@
     margin-bottom: 1em;
 
     @media (max-width: 768px) {
-      /* font-size: 3.5em; */
       white-space: pre-wrap;
       line-height: 0.8em;
-      margin-top: 0.7em;
+      margin-top: 0.3em;
       margin-bottom: 0.4em;
+      padding-left: 2%;
     }
   }
   @media (max-width: 768px) {
     width: 100%;
-    padding: 1%;
+    padding: 0;
     margin-bottom: 25vh;
   }
 
   & .project {
+    width: 90%;
     position: relative;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: flex-start;
-    width: 90%;
     margin-bottom: 4em;
     border-left: 15px solid;
     border-color: black;
     transition: transform 0.35s ease, border-color 0.35s ease;
 
     @media (max-width: 768px) {
-      width: 90%;
+      width: 100%;
       flex-direction: column;
       align-items: center;
-      padding: 1em 0.5em;
+      padding: 1em 0em;
+      border: none;
+      
+      }
     }
 
     & img {
       max-width: 25em;
       filter: grayscale(1);
       transition: filter 0.4s ease;
-      /* border-radius: 0.7em; */
       @media (max-width: 768px) {
-        max-width: 95%;
+        max-width: 100%;
+        filter: grayscale(0);
         margin-bottom: 0.5em;
       }
     }
     & .technology {
-      /* position: absolute; */
       background-color: rgb(74, 74, 74);
       margin-top: 0.4em;
       right: 29em;
@@ -82,15 +84,12 @@
       padding: 0 0.2em;
       min-width: 2.5em;
       text-align: center;
-      /* transform: rotate(347deg); */
       width: 9em;
 
       @media (max-width: 768px) {
         font-size: 1.3em;
-
         right: 0;
         top: -0.8em;
-        /* transform: rotate(3deg); */
       }
     }
     & .text-wrap {
@@ -102,7 +101,6 @@
       }
 
       & h2 {
-        /* font-size: 5em; */
         word-spacing: 0vw;
         font-family: sans-serif;
 
@@ -112,7 +110,6 @@
         }
       }
       & p {
-        /* font-size: 1.5em; */
         font-family: sans-serif;
 
         @media (max-width: 768px) {
