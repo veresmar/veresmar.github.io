@@ -21,8 +21,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* width: 5em;
-    height: 2.5em; */
     font-size: 2em;
     font-family: sans-serif;
     background-color: var(--background-RGB);
@@ -30,8 +28,6 @@
     bottom: 3em;
     left: 1em;
     z-index: 1;
-    /* bottom: -4.5em;
-    left: 7.5em; */
   }
 }
 .about-section {
@@ -39,7 +35,7 @@
   color: rgb(175 175 175);
 
   & a {
-    color: rgba(215, 215, 215, 1);
+    color: rgb(175 175 175);
     border-bottom: 1px solid white;
     &:hover {
       color: var(--font-RGB);

@@ -9,10 +9,13 @@ export const AboutMe = () => (
     
     <div className="about-text">
 
-    <h2>About</h2>
-    <p>I spent three years at <a href="https://intuition.team/about" target='_blanc'>Intuition Design Bureau</a>, where I worked side by side with designers, developers, and project managers. That time taught me how much I value being part of a team that not only builds things together, but also shares the reasoning behind every decision — always keeping the user and the client in mind.</p><br/>
-    <p>My background is rooted in semantic layout and styling (HTML, Pug, CSS/SCSS), but I’ve steadily taken on more responsibility in the front-end layer — working with JavaScript, building interactive components, and expanding my focus to include not only layout and design, but also structure, interaction, and front-end logic.</p><br/>
-    <p>Now, I’m ready to go further: to deepen my skills in modern frameworks, accessibility, and best practices — and to continue evolving as a developer by learning from skilled teammates and contributing to thoughtful, user-centered products.</p>
+    
+
+    <p>Hello! I’m a developer with 3 years of experience working in a <a href="https://intuition.team/about" target='_blanc'>design bureau</a>,  side by side with designers, developers, and project managers. I was responsible for the front-end - from clean, semantic layout to building interactive features with JavaScript and ensuring a smooth user experience.</p><br/>
+
+    <p>It’s important to me to create interfaces that not only look good but are also well-structured, accessible, and easy to maintain. I collaborate closely with the team to spot and address potential issues early, ensuring the interface aligns with the product vision.</p><br/>
+
+    <p>Now, I’m ready to take on more complex projects and keep growing as a developer — contributing to products that are built with intention and attention to detail.</p>
     <br/>
     
     </div>
