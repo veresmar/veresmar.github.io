@@ -20,7 +20,7 @@ export const Contacts = () => {
         </li>
         <li>
           <a href="https://www.linkedin.com/in/mariia-veres-824507229/" target='_blanc'>
-        <img src={Tg} alt="linkedin icon" />
+        <img src={Tg} className='linkedin' alt="linkedin icon" />
           </a>
         </li>
       </ul>
