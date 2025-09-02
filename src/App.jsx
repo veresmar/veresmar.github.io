@@ -7,7 +7,7 @@ import './styles/App.css';
 import { AboutMe }  from './components/About/About.jsx';
 import { Projects }  from './components/Projects/Projects.jsx';
 // import { Projects }  from './components/ProjectsList/Projects.jsx';
-import { Contacts }  from './components/Contacts/Contacts.jsx';
+// import { Contacts }  from './components/Contacts/Contacts.jsx';
 
 
 
@@ -26,7 +26,7 @@ function Home() {
         <Projects />
       </main>
       <footer>
-        <Contacts />
+        {/* <Contacts /> */}
       </footer>
     </>
   );
