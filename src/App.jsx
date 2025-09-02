@@ -15,15 +15,18 @@ function Home() {
   return (
     <>
       <header>
-        <h1>Maria Veres, frontend developer.</h1>
-        <p>Amsterdam, Netherlands</p>
+        <div className="header-text">
+
+          <h1>Maria Veres, frontend developer.</h1>
+          <p>Amsterdam, Netherlands</p>
+        </div>
       </header>
       <main>
         <AboutMe />
         <Projects />
       </main>
       <footer>
-        {/* <Contacts /> */}
+        <Contacts />
       </footer>
     </>
   );

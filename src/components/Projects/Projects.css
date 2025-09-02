@@ -1,7 +1,5 @@
 .projects-wrap {
   position: relative;
-  /* overflow: hidden; */
-  font-family: sans-serif;
   padding-bottom: 35vh;
   background: radial-gradient(
         13.26vh at 50% calc(100% - 15.6vh),
@@ -13,8 +11,8 @@
       calc(100% - 13vh) / 52vh 100% repeat-x;
 
   @media (max-width: 768px) {
-    /* width: 100%; */
-    margin-top: 1vh;
+    background: black;
+    margin-top: 1em;
     padding: 0;
   }
 }
@@ -23,9 +21,14 @@
   flex-direction: column;
   padding: 1%;
   margin-top: 1vh;
+  
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 3em;
+  }
 
   & h2 {
-    /* font-size: 5.5em; */
     word-spacing: 0vw;
     font-family: sans-serif;
     margin-bottom: 1em;
@@ -35,14 +38,10 @@
       line-height: 0.8em;
       margin-top: 0.3em;
       margin-bottom: 0.4em;
-      padding-left: 2%;
+      padding: 2% 0 0 2%;
     }
   }
-  @media (max-width: 768px) {
-    width: 100%;
-    padding: 0;
-    margin-bottom: 25vh;
-  }
+  
 
   & .project {
     width: 90%;

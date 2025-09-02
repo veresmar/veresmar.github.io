@@ -1,29 +1,38 @@
 #contacts {
-  margin-top: 6.5vw;
+  /* margin-top: 6.5vw;
   font-family: sans-serif;
   padding: 0.6vw 4vw;
-  max-width: 47vh;
-  max-width: 30%;
+  max-width: 47vh; */
+  /* max-width: 30%; */
+  padding: 0 0 0.3em 0.3em;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+
   & ul {
     display: flex;
-  }
-  li {
-    transition: transform 0.3s ease, filter 0.3s ease;
-    cursor: pointer;
-    max-width: 4em;
-    &:hover {
-      transform: scale(1.08);
-      filter: drop-shadow(2px 4px 6px black);
-      transition: transform 0s ease, filter 0s ease;
+    @media (max-width: 768px) {
+      justify-content: center;
     }
-    &:last-child {
-      & img.linkedin {
-        filter: invert(1);
-        width: 3.4em;
+    & li {
+      transition: transform 0.3s ease, filter 0.3s ease;
+      cursor: pointer;
+      max-width: 4em;
+
+      &:hover {
+        transform: scale(1.08);
+        filter: drop-shadow(2px 4px 6px black);
+        transition: transform 0s ease, filter 0s ease;
+      }
+      &:last-child {
+        & img.linkedin {
+          filter: invert(1);
+          width: 3.4em;
+        }
       }
     }
   }
-
   & img {
     width: 4em;
   }

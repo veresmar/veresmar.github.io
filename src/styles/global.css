@@ -21,20 +21,32 @@
   cursor: url("../assets/skyrim.cur") 5 5, auto;
 }
 header {
-  display: flex;
-  justify-content: space-between;
   padding: 2% 1%;
   background-color: white;
   color: black;
 
   @media (max-width: 768px) {
-    min-width: 100%;
     overflow-x: hidden;
-    flex-direction: column;
-    align-items: flex-end;
   }
 
-  p {
+  & .header-text {
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-end;
+      width: 97%;
+
+      & h1 {
+        line-height: 1;
+        margin-bottom: 0.15em;
+      }
+    }
+  }
+
+  & p {
     font-size: 1em;
     font-weight: 650;
     white-space: break-spaces;
@@ -49,15 +61,13 @@ header {
 }
 body {
   overflow-x: hidden;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   cursor: url("../assets/skyrim.cur") 5 5, auto;
   @media (max-width: 768px) {
     width: 102%;
   }
-}
-main {
 }
 
 h1 {

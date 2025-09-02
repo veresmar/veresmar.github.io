@@ -16,7 +16,7 @@
   @media (max-width: 768px) {
     margin-top: 26vh;
   }
-  h3 {
+  & h3 {
     font-weight: 300;
   }
 }
@@ -32,7 +32,7 @@
   row-gap: 5vw;
   margin-top: 5vh;
 
-  a::before {
+  & a::before {
     content: "";
     position: absolute;
     top: 0;
@@ -42,7 +42,7 @@
     z-index: 1;
   }
 
-  li {
+  & li {
     display: flex;
     align-items: center;
     padding: 1em 3em;
@@ -58,11 +58,11 @@
     transition: transform 0.3s ease, filter 0.3s ease,
       background-color 0.3s ease;
 
-    h4 {
+    & h4 {
       font-size: 2vw;
       visibility: hidden;
     }
-    img {
+    & img {
       width: 100%;
     }
 
@@ -89,4 +89,6 @@
       calc(50% - 26vh) 0/52vh 100%,
     radial-gradient(13.26vh at 50% calc(100% + 2.6vh), #0000 99%, #000 101%) 50%
       calc(100% - 13vh) / 52vh 100% repeat-x;
+
+  
 }
