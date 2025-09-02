@@ -67,7 +67,7 @@ export const Projects = () => (
         <a href="https://shift.dodobrands.io/en/" target='_blanc'></a>
     </div>
 
-    <div className="project">
+    {/* <div className="project">
       <img src={tvmenu} alt="A tool for marketers, helping to update layouts on the pizzeria screens. The screensot of the main page" />
      
       <div className="text-wrap">
@@ -83,9 +83,9 @@ export const Projects = () => (
          <p className="technology">JS</p>
       </div>
         <a href="https://intuition-tech.github.io/tv-menu-monitor.github.io/" target='_blanc'></a>
-    </div>
+    </div> */}
 
-    <div className="project">
+    {/* <div className="project">
       <img src={intuition} alt="The website for the design bureau. The screensot of the main page" />
       <div className="text-wrap">
 
@@ -100,7 +100,7 @@ export const Projects = () => (
       <p className="technology">Svelte, Scss, PUG</p>
       </div>
         <a href="https://intuition.team/about" target='_blanc'></a>
-    </div>
+    </div> */}
 
   </div>
   </section>
