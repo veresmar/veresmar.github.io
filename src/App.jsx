@@ -23,7 +23,7 @@ function Home() {
         <Projects />
       </main>
       <footer>
-        <Contacts />
+        {/* <Contacts /> */}
       </footer>
     </>
   );
