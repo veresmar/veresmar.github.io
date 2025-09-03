@@ -1,28 +1,19 @@
 :root {
-  --mobile-width: 900px;
-  --tablet-width: 1024px;
-  --background-RGB: rgb(36, 36, 36);
+  --background-RGB: rgb(17, 17, 17);
   --font-RGB: rgb(238, 233, 215);
-  --font-RGB: rgb(222, 222, 222);
+  --font-RGB: rgb(170, 170, 170);
   --projects-background-RGB: rgb(0, 0, 0);
   --hover-RGB: rgb(255, 163, 243);
-  --mask: radial-gradient(5.83vh at 50% 8vh, #1f1616 99%, #0000 101%)
-      calc(50% - 10vh) 0 / 20vh 51% repeat-x,
-    radial-gradient(5.83vh at 50% -3vh, #0000 99%, #000 101%) 50% 5vh / 20vh
-      calc(51% - 5vh) repeat-x,
-    radial-gradient(5.83vh at 50% calc(100% - 8vh), #000 99%, #0000 101%) 50%
-      100% / 20vh 51% repeat-x,
-    radial-gradient(5.83vh at 50% calc(100% + 3vh), #0000 99%, #000 101%)
-      calc(50% - 10vh) calc(100% - 5vh) / 20vh calc(51% - 5vh) repeat-x;
+  --brat-RGB: #8ace00;
 }
 
 @font-face {
-  font-family: "Caveat";
-  src: url("../assets/font/Caveat-VariableFont_wght.ttf") format("truetype");
+  font-family: "pt-mono";
+  src: url("../assets/font/pt-mono_bold.ttf") format("truetype");
   font-weight: 100 900;
 }
 @font-face {
-  font-family: sans-serif;
-  src: url("../assets/font/high-summer.woff") format("opentype");
-  font-weight: 100 900;
+  font-family: "pt-root";
+  src: url("../assets/font/pt-root-ui_regular.ttf") format("truetype");
+  font-weight: 400 600;
 }

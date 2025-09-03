@@ -6,7 +6,7 @@
 
 :root {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: sans-serif;
+  font-family: "pt-root";
   line-height: 1.5;
   font-weight: 400;
 
@@ -21,22 +21,39 @@
   cursor: url("../assets/skyrim.cur") 5 5, auto;
 }
 header {
-  padding: 2% 1%;
-  background-color: white;
-  color: black;
-
+  padding: 2em 1em;
+  /* background-color: white;
+  color: black; */
+  color: rgb(170, 170, 170);
   @media (max-width: 768px) {
     overflow-x: hidden;
   }
 
   & .header-text {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     width: 99%;
+    & a {
+      color: black;
+      padding: 0.5em 0.3em;
+      background-color: var(--brat-RGB);
+      transition: background-color 0.6s ease;
+      border-radius: 0.15em;
+
+      &::selection {
+        background: transparent;
+      }
+
+      &:hover {
+        background-color: rgb(170, 170, 170);
+        transition: background-color 0s ease;
+      }
+    }
 
     @media (max-width: 768px) {
       flex-direction: column;
-      align-items: flex-end;
+      align-items: flex-start;
       width: 97%;
 
       & h1 {
@@ -71,28 +88,37 @@ body {
 }
 
 h1 {
-  font-size: 2.5em;
-  white-space: nowrap;
-  line-height: 0.8;
+  font-family: "pt-mono";
+  font-size: 7em;
+
+  line-height: 0.9;
   /* cursor: url("../assets/skyrim.cur") 5 5, auto; */
   @media (max-width: 768px) {
-    white-space: break-spaces;
+    font-size: 4em;
+  }
+
+  &::selection {
+    background: var(--hover-RGB);
+    color: black;
   }
 }
 
 h2 {
-  font-size: 2.2em;
+  font-size: 2em;
   white-space: nowrap;
   /* text-align: center; */
 }
 h3 {
-  font-size: 1.8em;
+  font-family: "pt-mono";
+  font-size: 4.8em;
   white-space: nowrap;
-  /* text-align: center; */
+  @media (max-width: 768px) {
+    font-size: 3em;
+  }
 }
 a {
   color: var(--font-RGB);
-  font-family: sans-serif;
+
   cursor: pointer;
   text-decoration: none;
   transition: color 0.3s ease;

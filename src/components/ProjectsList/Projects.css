@@ -1,7 +1,7 @@
 .projects {
   position: relative;
   overflow: hidden;
-  font-family: Caveat, sans-serif;
+  
   margin-top: 33vh;
   padding: 2vh 0 35vh;
   background: radial-gradient(
@@ -48,7 +48,7 @@
     padding: 1em 3em;
     height: 15em;
     width: 15em;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     background-color: var(--font-RGB);
     margin-top: 0.6vh;
     border-radius: 1.5em;
@@ -89,6 +89,4 @@
       calc(50% - 26vh) 0/52vh 100%,
     radial-gradient(13.26vh at 50% calc(100% + 2.6vh), #0000 99%, #000 101%) 50%
       calc(100% - 13vh) / 52vh 100% repeat-x;
-
-  
 }
