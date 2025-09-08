@@ -1,34 +1,27 @@
 import './Projects.css';
 import { Link } from "react-router-dom";
-import dodoLogo from './img/1.jpg';
-import petrickLogo from './img/2.jpg';
-import yepLogo from './img/3.jpg';
+
 
 const projects = [
   {
-    name: 'Dodo TV menu',
-    slug: '/dodo-pizza-tv-menu',
-    img: dodoLogo,
-    description: "tool for Dodo Pizza's managers"
-  },
-  {
-    name: 'Shift',
-    slug: '/dodo-pizza-shift',
-    img: petrickLogo,
-    description: "website with tutorials for Dodo Pizza's creative teams"
-  },
-  {
     name: 'Petrick',
-    slug: '/petrick-website',
-    img: yepLogo,
-    description: "animation studio's website"
+    slug: 'https://www.petrick.co/',
+    description: 'animation studio',
+    stack: 'Svelte, Scss, PUG'
   },
   {
     name: 'Yep!',
-    slug: '/yep-website',
-    img: dodoLogo,
-    description: ''
+    slug: 'https://yepagency.ru/en',
+    description: 'advertising agency',
+    stack: 'JS, Svelte'
+  },
+  {
+    name: 'Shift',
+    slug: 'https://shift.dodobrands.io/en/',
+    description: "Guidelines for the Dodo Pizza creative teams",
+    stack: 'PUG, Scss'
   }
+  
 ];
 
 
@@ -36,21 +29,26 @@ const projects = [
 export const Projects = () => {
   return (
     <>
-      <section className='projects'>
-      <h3>Here're some projects I've been working on</h3>
-      <div className="wrap">
-      <ul className='projects-list'>
-        {projects.map((project, index) => (
-          <li className='project-item' key={index}>
-            <img src={project.img} alt={project.name} />
-            <Link to={`/projects${project.slug}`}>
-              <h4>{project.name}</h4>
-            </Link>
-          </li>
-        ))}
-      </ul>
-      </div>
-      {/* <div className="wave-down"></div> */}
+      <section className="projects-wrap">
+        <div id="projects" className="projects">
+          <h2>Projects</h2>
+          <div className='projects'>
+            {projects.map((project, index) => (
+              <div className='project' key={index}>
+                  <div className="text-wrap">
+                    <div className="description">
+                      <p>{project.description}</p>
+                      <p>{project.stack}</p>
+                    </div>
+
+                    <h3>{project.name}</h3>
+                  </div>
+                <Link to={project.slug} target='_blanc'>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
     </>
   );

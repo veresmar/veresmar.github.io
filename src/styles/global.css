@@ -5,7 +5,6 @@
 }
 
 :root {
-  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   font-family: "pt-root";
   line-height: 1.5;
   font-weight: 400;
@@ -18,18 +17,29 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --mobile-width: 900px;
-  cursor: url("../assets/skyrim.cur") 5 5, auto;
+  /* cursor: url("../assets/skyrim.cur") 5 5, auto; */
 }
+
+body {
+  cursor: none;
+  overflow-x: hidden;
+  padding-left: 1em;
+  display: flex;
+  flex-direction: column;
+  /* cursor: url("../assets/skyrim.cur") 5 5, auto; */
+  @media (max-width: 768px) {
+    width: 102%;
+  }
+}
+
 header {
-  padding: 2em 1em;
-  /* background-color: white;
-  color: black; */
+  padding: 2em 0;
   color: rgb(170, 170, 170);
   @media (max-width: 768px) {
     overflow-x: hidden;
   }
 
-  & .header-text {
+  & .header-content {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -76,16 +86,6 @@ header {
     }
   }
 }
-body {
-  overflow-x: hidden;
-  /* width: 100%; */
-  display: flex;
-  flex-direction: column;
-  cursor: url("../assets/skyrim.cur") 5 5, auto;
-  @media (max-width: 768px) {
-    width: 102%;
-  }
-}
 
 h1 {
   font-family: "pt-mono";
@@ -104,9 +104,9 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1em;
   white-space: nowrap;
-  /* text-align: center; */
+  text-transform: uppercase;
 }
 h3 {
   font-family: "pt-mono";
@@ -119,7 +119,7 @@ h3 {
 a {
   color: var(--font-RGB);
 
-  cursor: pointer;
+  cursor: none;
   text-decoration: none;
   transition: color 0.3s ease;
   &:hover {

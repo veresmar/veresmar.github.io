@@ -1,8 +1,6 @@
 :root {
   --background-RGB: rgb(17, 17, 17);
-  --font-RGB: rgb(238, 233, 215);
   --font-RGB: rgb(170, 170, 170);
-  --projects-background-RGB: rgb(0, 0, 0);
   --hover-RGB: rgb(255, 163, 243);
   --brat-RGB: #8ace00;
 }
