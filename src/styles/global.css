@@ -11,13 +11,10 @@
 
   color: var(--font-RGB);
   background-color: var(--background-RGB);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --mobile-width: 900px;
-  /* cursor: url("../assets/skyrim.cur") 5 5, auto; */
 }
 
 body {
@@ -26,9 +23,11 @@ body {
   padding-left: 1em;
   display: flex;
   flex-direction: column;
-  /* cursor: url("../assets/skyrim.cur") 5 5, auto; */
+
   @media (max-width: 768px) {
+    cursor: auto;
     width: 102%;
+    padding-left: 1em;
   }
 }
 
@@ -44,22 +43,6 @@ header {
     align-items: flex-start;
     justify-content: space-between;
     width: 99%;
-    & a {
-      color: black;
-      padding: 0.5em 0.3em;
-      background-color: var(--brat-RGB);
-      transition: background-color 0.6s ease;
-      border-radius: 0.15em;
-
-      &::selection {
-        background: transparent;
-      }
-
-      &:hover {
-        background-color: rgb(170, 170, 170);
-        transition: background-color 0s ease;
-      }
-    }
 
     @media (max-width: 768px) {
       flex-direction: column;
@@ -86,20 +69,21 @@ header {
     }
   }
 }
+footer {
+  padding: 0 0 5em 0;
+}
 
 h1 {
   font-family: "pt-mono";
   font-size: 7em;
-
   line-height: 0.9;
-  /* cursor: url("../assets/skyrim.cur") 5 5, auto; */
   @media (max-width: 768px) {
     font-size: 4em;
   }
 
   &::selection {
     background: var(--hover-RGB);
-    color: black;
+    color: var(--background-RGB);
   }
 }
 
@@ -118,16 +102,29 @@ h3 {
 }
 a {
   color: var(--font-RGB);
-
   cursor: none;
   text-decoration: none;
-  transition: color 0.3s ease;
-  &:hover {
-    color: var(--hover-RGB);
-    color: rgb(169 169 169);
-    transition: color 0s ease;
+  @media (max-width: 768px) {
+    cursor: auto;
   }
 }
-li {
-  list-style-type: none;
+p {
+  font-size: 1em;
+}
+
+.desktop-only {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.mobile-only {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+.center-position {
+  display: flex;
+  justify-content: center;
+  margin-left: -2em;
 }

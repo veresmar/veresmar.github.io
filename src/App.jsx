@@ -2,24 +2,23 @@
 import { Routes, Route } from "react-router-dom";
 import './styles/vars.css';
 import './styles/global.css';
-import './styles/project.css';
-import './styles/App.css';
 import { AboutMe }  from './components/About/About.jsx';
 import { Projects }  from './components/ProjectsList/Projects.jsx';
-console.log('✨⭐️✨ Hello, World! ✨⭐️✨') 
-// import { Projects }  from './components/ProjectsList/Projects.jsx';
-// import { Contacts }  from './components/Contacts/Contacts.jsx';
+import { ContactButton } from "./components/ContactButton/ContactButton.jsx";
 import CustomCursor from "./components/Cursor/Cursor.jsx";
+console.log('✨⭐️✨ Hello, World! ✨⭐️✨');
 
 
 function Home() {
   return (
     <>
-      <CustomCursor />
+      <div className="desktop-only">
+        <CustomCursor />
+      </div>
       <header>
         <div className="header-content">
           <h1>Maria Veres, frontend developer.</h1>
-          <a href="mailto:veres.maria.dev@gmail.com" target='_blanc'>contact</a>
+          <ContactButton />
         </div>
       </header>
       <main>
@@ -27,7 +26,9 @@ function Home() {
         <Projects />
       </main>
       <footer>
-        {/* <Contacts /> */}
+        <div className="center-position">
+          <ContactButton />
+        </div> 
       </footer>
     </>
   );

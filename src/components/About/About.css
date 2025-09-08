@@ -5,23 +5,21 @@
     width: 86%;
   }
   & p {
-    font-size: 1em;
-
     &:last-of-type {
       margin-top: 0.5em;
     }
   }
   & a {
     border-bottom: 1px solid;
-    border-color: rgba(var(--font-RGB), 0.1);
-    border-color: #505050;
-
+    border-color: var(--border-RGB);
+    transition: border-color 0.35s ease;
     &:hover {
       border-color: rgba(var(--font-RGB), 1);
+      transition: border-color 0s ease;
     }
   }
   &::selection {
     background: var(--brat-RGB);
-    color: black;
+    color: var(--background-RGB);
   }
 }

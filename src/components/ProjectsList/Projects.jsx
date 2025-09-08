@@ -1,5 +1,4 @@
 import './Projects.css';
-import { Link } from "react-router-dom";
 
 
 const projects = [
@@ -21,20 +20,19 @@ const projects = [
     description: "Guidelines for the Dodo Pizza creative teams",
     stack: 'PUG, Scss'
   }
-  
 ];
-
 
 
 export const Projects = () => {
   return (
     <>
       <section className="projects-wrap">
-        <div id="projects" className="projects">
+        <div id="projectsList" className="projectsList">
           <h2>Projects</h2>
-          <div className='projects'>
-            {projects.map((project, index) => (
-              <div className='project' key={index}>
+         
+            {projects.map(project => (
+              <article className='project' key={project.name}>
+                <a href={project.slug} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${project.name} website`}>
                   <div className="text-wrap">
                     <div className="description">
                       <p>{project.description}</p>
@@ -43,11 +41,10 @@ export const Projects = () => {
 
                     <h3>{project.name}</h3>
                   </div>
-                <Link to={project.slug} target='_blanc'>
-                </Link>
-              </div>
+                </a>
+              </article>
             ))}
-          </div>
+          
         </div>
       </section>
     </>

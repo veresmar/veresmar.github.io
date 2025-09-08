@@ -1,8 +1,11 @@
 :root {
   --background-RGB: rgb(17, 17, 17);
-  --font-RGB: rgb(170, 170, 170);
+  --font-RGB: rgba(170, 170, 170, 1);
   --hover-RGB: rgb(255, 163, 243);
-  --brat-RGB: #8ace00;
+  --brat-RGB: rgba(138, 206, 0, 1);
+  --border-RGB: rgb(37, 37, 37);
+  --border-RGB: rgba(61, 61, 61, 1);
+  --border-size: 1px;
 }
 
 @font-face {

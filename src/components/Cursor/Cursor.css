@@ -3,10 +3,9 @@
   width: 2em;
   height: 2em;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.7);
+  background: var(--font-RGB);
   pointer-events: none;
   z-index: 1;
-  transform: translate(-50%, -50%);
   filter: blur(0.5em);
 }
 .custom-cursor.pointer {
