@@ -8,6 +8,9 @@
     &:last-of-type {
       margin-top: 0.5em;
     }
+    &.location {
+      opacity: 0.6;
+    }
   }
   & a {
     border-bottom: 1px solid;
