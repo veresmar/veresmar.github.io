@@ -6,13 +6,13 @@ const projects = [
     name: 'Petrick',
     slug: 'https://www.petrick.co/',
     description: 'animation studio',
-    stack: 'Svelte, Scss, PUG'
+    stack: 'SvelteKit, Scss, PUG'
   },
   {
     name: 'Yep!',
     slug: 'https://yepagency.ru/en',
     description: 'advertising agency',
-    stack: 'JS, Svelte'
+    stack: 'JS, SvelteKit'
   },
   {
     name: 'Shift',
