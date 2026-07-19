@@ -2,11 +2,11 @@ import './About.css';
 
 export const AboutMe = () => (
   <section id="about" className="about-section">
-      <p>Hello! I am a developer with 3 years of&nbsp;experience building modern web applications using SvelteKit, as well as React and TypeScript. I focus on creating clean, component-based interfaces, implementing client-side routing, and delivering interactive, user-friendly UI.
+      <p>Hello! I’m a developer with 3+ years of&nbsp;experience building responsive and&nbsp;interactive web interfaces with SvelteKit,&nbsp;React, and TypeScript.
         </p><br/><p>
-        I care about accessibility, performance and Core Web Vitals, and I enjoy collaborating with&nbsp;teams to turn ideas into high-quality, user-focused products.<br/>
+        I enjoy creating maintainable component-based solutions, improving performance, and&nbsp;transforming designs into accessible, user-friendly products.<br/>
       </p><br/><p>
-      If you value both technical quality and&nbsp;teamwork, I’d be happy to connect.
+      Feel free to get in touch, I’d love to discuss interesting projects and opportunities!
      
 {/* 
       My background includes strong experience with semantic markup and styling, combined with JavaScript-driven interaction, performance optimization, and component-based development. <br/>
