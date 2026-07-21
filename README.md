@@ -1,4 +1,27 @@
-This page contains a collection of projects in which I've participated.
-You can run the repository locally by typing this command
-- npm run dev
-- or look at the Deployements section and click the link :) 
+# Front-end Developer Portfolio
+
+A collection of front-end projects I’ve built and contributed to, showcasing my experience in building interactive, accessible, and maintainable web interfaces with React, TypeScript, and JavaScript.
+
+
+
+## Tech Stack
+
+- React
+- TypeScript
+- Svelte
+- JavaScript
+- Vite
+- CSS / SCSS
+- React Router
+
+## Getting Started
+
+To run the project locally:
+
+```bash
+npm install
+npm run dev
+
+## Live Demo
+
+🔗 https://veresmar.github.io/
