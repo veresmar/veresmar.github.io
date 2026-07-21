@@ -3,15 +3,21 @@ import './Projects.css';
 
 const projects = [
   {
+    name: 'ToDo App',
+    slug: 'https://e-commerce-app-ten-amber-59.vercel.app/',
+    description: "A task management SPA built from scratch",
+    stack: 'React, TypeScript'
+  },
+  {
     name: 'Petrick',
     slug: 'https://www.petrick.co/',
-    description: 'animation studio',
+    description: 'Animation studio',
     stack: 'SvelteKit, Scss, PUG'
   },
   {
     name: 'Yep!',
     slug: 'https://yepagency.ru/en',
-    description: 'advertising agency',
+    description: 'Advertising agency',
     stack: 'JS, SvelteKit'
   },
   {
