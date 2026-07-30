@@ -1,6 +1,6 @@
 .about-section {
   margin: 1em 0;
-  width: 24%;
+  width: 45%;
   @media (max-width: 768px) {
     width: 86%;
   }
