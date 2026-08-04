@@ -52,6 +52,17 @@
       }
     }
 
+    & p.myRole {
+      font-size: 1em;
+      text-transform: lowercase;
+      opacity: 0.75;
+      line-height: normal; 
+      & span {
+        text-transform: uppercase;
+        font-size: 1em; 
+      }
+    }
+
     & a::before {
       content: "";
       position: absolute;
@@ -72,11 +83,14 @@
       }
     }
   }
+  
   & .project:nth-of-type(3) {
     border-bottom: var(--border-size) solid;
     border-color: var(--border-RGB);
     &:hover {
       border-top-color: var(--brat-RGB);
     }
-  }
+    
+  
+}
 }
