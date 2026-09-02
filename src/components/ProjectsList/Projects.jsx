@@ -3,11 +3,11 @@ import './Projects.css';
 
 const projects = [
   {
-    name: 'ToDo App',
-    slug: 'https://e-commerce-app-ten-amber-59.vercel.app/',
+    name: 'Task Manager',
+    slug: 'https://react-task-manager-eight-phi.vercel.app/',
     description: "A task management SPA built from scratch",
-    stack: 'React, TypeScript',
-    myRole: 'Developed a task management SPA from scratch. Built reusable components, implemented CRUD operations, task filtering, validated forms, LocalStorage persistence, and type-safe data flow using a component-based architecture and modern React patterns.'
+    stack: 'React, TypeScript, REST API, Express, PostgreSQL',
+    myRole: 'Solo Developer. Developed a full-stack task management application. Built a REST API with CRUD operations, implemented form validation, task filtering and image uploads, integrated Neon PostgreSQL and Cloudinary. Prepared the application for production deployment on Vercel, including database migrations, environment configuration, and API documentation.'
   },
   {
     name: 'Yep!',
